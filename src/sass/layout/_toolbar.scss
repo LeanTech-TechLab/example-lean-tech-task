@@ -1,0 +1,40 @@
+@import "../utilities/variables";
+@import "../abstracts/breakpoints";
+
+.toolbar {
+  height: 85px;
+  background-color: $background-toolbar;
+  &__logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+    height: 100%;
+  }
+  &__logo {
+    width: 50%;
+  }
+  &__menu-icon {
+    width: 5%;
+    min-width: 20px;
+  }
+  @media #{$gt-xs} {
+    &__menu-icon {
+      display: none;
+    }
+  }
+  @media #{$gt-sm} {
+    height: 120px;
+    &__logo {
+      width: 20%;
+    }
+  }
+  @media #{$md} {
+    height: 85px;
+    &__logo {
+      width: 40%;
+    }
+  }
+
+}

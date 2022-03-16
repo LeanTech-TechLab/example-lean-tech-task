@@ -1,0 +1,68 @@
+@import "src/sass/utilities/mixins";
+@import "src/sass/abstracts/breakpoints";
+
+.careers {
+  &__title-image-section {
+    background-image: linear-gradient(180deg,transparent,transparent),linear-gradient(90deg,rgba(255,78,0,.75),hsla(0,0%,100%,0)),url("https://assets-global.website-files.com/5fb54f94c7530ffde5620e2b/61c1585a7a0ed72ca9e5d41f_developer-coding.jpeg");
+    background-size: cover;
+    background-repeat: repeat,repeat,no-repeat;
+    background-position: center;
+    padding: 200px 0;
+  }
+
+  &__title {
+    font-size: 30px;
+    color: white;
+    padding: 0 30px;
+    line-height: 40px;
+  }
+
+  &__sub-title {
+    font-size: 16px;
+    color: white;
+    padding: 0 30px;
+    line-height: 40px;
+  }
+
+  &__apply-section {
+    @include margin-top-section(120px);
+    padding: 0 20px;
+  }
+
+  &__title_apply {
+    @include main-title;
+  }
+
+  &__divider {
+    @include divider;
+  }
+
+  &__text-container {
+    @include text-description;
+  }
+  &__apply-now-button-container{
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  &__apply-now-button {
+    @include button;
+  }
+
+  @media #{$xs} {
+    &__apply-now-button {
+      width: 100%;
+    }
+  }
+
+  @media #{$gt-sm} {
+    &__title-image-section {
+      @include container;
+    }
+    &__apply-section {
+      @include container;
+    }
+    &__apply-now-button {
+    }
+  }
+}

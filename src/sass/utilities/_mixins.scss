@@ -1,0 +1,44 @@
+@import "variables";
+
+@mixin main-title () {
+  font-size: 34px;
+  line-height: 44px;
+  color: $primary-2;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin margin-top-section ($margin-top) {
+  margin-top: $margin-top;
+}
+
+@mixin divider () {
+  background-color: $primary-1;
+  height: 3px;
+  width: 40px;
+}
+
+@mixin text-description () {
+  color: $text-1;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+@mixin button {
+  padding: 12px 40px;
+  background-color: $primary-2;
+  color: white;
+  transition: background-color .4s;
+  text-transform: uppercase;
+  text-align: center;
+  border: 0;
+  border-radius: 0;
+  &:hover {
+    background-color: $primary-1;
+  }
+}
+
+@mixin container () {
+  width: 40%;
+  margin: 0 auto;
+}
