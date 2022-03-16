@@ -14,10 +14,10 @@ describe("AppComponent", () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-template'`, () => {
+  it(`should have as title 'example-lean-tech-task'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual("angular-template");
+    expect(app.title).toEqual("example-lean-tech-task");
   });
 
   it("should render title", () => {
@@ -25,7 +25,7 @@ describe("AppComponent", () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector(".content span").textContent).toContain(
-      "angular-template app is running!"
+      "example-lean-tech-task app is running!"
     );
   });
 });
